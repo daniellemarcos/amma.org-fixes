@@ -1,0 +1,92 @@
+/**
+ * @file
+ * CSS file for OpenLayers dark theme.
+ *
+ * We include the default styles, then add
+ * some specificity to override certain elements 
+ * like image references.
+ */
+ 
+@import url("openlayers_style.css"); 
+
+
+.olLayerGoogleCopyright { visibility:hidden; display:none; }
+
+
+#popup_contentDiv.olFramedCloudPopupContent {
+  height:auto !important;
+  margin-bottom: 5px !important;
+  padding:2px 2px 10px 2px !important;
+}
+
+#popup_contentDiv.olFramedCloudPopupContent .openlayers-popup,
+#popup_contentDiv.olFramedCloudPopupContent .openlayers-popup a {
+  color:#fff;
+  font-weight:bold;
+}
+
+#popup_contentDiv.olFramedCloudPopupContent .openlayers-popup.openlayers-tooltip-name {
+  font-size:14px;
+  line-height:1.25em;
+ }
+
+#popup_contentDiv.olFramedCloudPopupContent .openlayers-popup.openlayers-tooltip-directions {
+  margin-top:4px;
+  margin-bottom:4px;
+  font-weight:normal;
+  color:#8eecfe;
+}
+  #popup_contentDiv.olFramedCloudPopupContent .openlayers-popup.openlayers-tooltip-directions a {
+    font-weight:normal;
+    color:#8eecfe;
+  }
+
+
+ 
+.openlayers-map .olControlOverviewMapExtentRectangle {
+    background-image: url("img/blank.gif");
+}
+.openlayers-map .olControlZoomPanel div {
+    background-image: url("img/zoom-panel.png");
+}
+.openlayers-map .olControlNavToolbar div,
+.openlayers-map .olControlEditingToolbar div {
+    background-image: url("img/editing_tool_bar.png");
+}
+
+/**
+ * A few custom styles
+ */
+.openlayers-popup {
+  color: #fff;
+}
+
+
+/**
+ * The following are images that are not in
+ * this theme (but should be).
+ */
+ 
+/*
+
+.openlayers-map .olControlOverviewMapRectReplacement {
+    background-image: url("img/overview_replacement.gif");
+}
+.openlayers-map .olControlNavigationHistory {
+    background-image: url("img/navigation_history.png");
+}
+.openlayers-map div.olControlSaveFeaturesItemActive {
+    background-image: url("img/save_features_on.png");
+}
+div.olControlSaveFeaturesItemInactive {
+    background-image: url("img/save_features_off.png");
+}
+.openlayers-map .olControlPanPanel div {
+    background-image: url("img/pan-panel.png");
+}
+.openlayers-map .olPopupCloseBox {
+    background: url("img/close.gif") no-repeat scroll 0 0 transparent;
+}
+
+
+*/
